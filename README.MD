@@ -1,0 +1,1 @@
+This module uses puppeteer to render html code in background, then allow it to be printed as an image using ESCPOS (POS printers).
