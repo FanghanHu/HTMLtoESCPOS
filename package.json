@@ -1,0 +1,30 @@
+{
+  "name": "htmltoescpos",
+  "version": "1.0.0",
+  "description": "This module uses puppeteer to render html code in background, then allow it to be printed as an image using ESCPOS (POS printers).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FanghanHu/HTMLtoESCPOS.git"
+  },
+  "keywords": [
+    "html",
+    "escpos",
+    "printer",
+    "print"
+  ],
+  "author": "Fanghan Hu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FanghanHu/HTMLtoESCPOS/issues"
+  },
+  "homepage": "https://github.com/FanghanHu/HTMLtoESCPOS#readme",
+  "dependencies": {
+    "escpos": "^3.0.0-alpha.6",
+    "get-pixels": "^3.3.2",
+    "puppeteer": "^5.3.1"
+  }
+}
