@@ -24,6 +24,9 @@
   "homepage": "https://github.com/FanghanHu/HTMLtoESCPOS#readme",
   "dependencies": {
     "escpos": "^3.0.0-alpha.6",
+    "escpos-network": "^3.0.0-alpha.5",
+    "escpos-serialport": "^3.0.0-alpha.4",
+    "escpos-usb": "^3.0.0-alpha.4",
     "get-pixels": "^3.3.2",
     "puppeteer": "^5.3.1"
   }
