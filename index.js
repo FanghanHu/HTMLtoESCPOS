@@ -207,9 +207,24 @@ class NetworkPrinter extends Printer{
     }
 }
 
+class USBPrinter extends Printer {
+    constructor(vid, pid, options = {}) {
+        // noinspection JSValidateTypes
+        super(new escpos.USB(vid, pid), options);
+    }
+}
+
+class SerialPrinter extends Printer {
+    constructor(port, portConfig, options = {}) {
+        super(new escpos.Serial(port, portConfig), options);
+    }
+}
+
 module.exports.launchBrowser = launchBrowser;
 module.exports.closeBrowser = closeBrowser;
 module.exports.print = print;
 
 module.exports.Printer = Printer;
 module.exports.NetworkPrinter = NetworkPrinter;
+module.exports.USBPrinter = USBPrinter;
+module.exports.SerialPrinter = SerialPrinter;
