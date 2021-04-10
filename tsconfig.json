@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"noEmitOnError": true,
+		"removeComments": false,
+		"declaration": true,
+		"sourceMap": true,
+        "allowJs": true,
+		"moduleResolution": "node",
+		"target": "es6",
+		"outDir": "dist",
+	},
+	"include": ["src"]
+}
