@@ -1,9 +1,10 @@
 {
   "name": "htmltoescpos",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This module uses puppeteer to render html code in background, then allow it to be printed as an image using ESCPOS (POS printers).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "test": "ts-node test/test.ts",
     "build": "tsc --build",
