@@ -82,9 +82,9 @@ export default class Printer {
     /**
      * print the given image, image should be a buffer or an url
      */
-    printImage(image, { topFeed = 2, bottomFeed = 2, cut = true, beep, cashdraw } = {}) {
+    printImage(image, { topFeed = 2, bottomFeed = 2, cut = true, beep, cashdraw, imageFormat = "png" } = {}) {
         //translate the buffer or url into pixels
-        getPixels(image, "image/png", (err, pixels) => {
+        getPixels(image, "image/" + imageFormat, (err, pixels) => {
             if (err) {
                 console.error(err);
             }

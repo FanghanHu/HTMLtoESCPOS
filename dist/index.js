@@ -89,14 +89,19 @@ export const screenshotDomElement = (page, selector, padding = 0) => __awaiter(v
 });
 /**
  *
- * @param ip
- * @param port default 9100
+ * @param ip the ip address to connect to the printer
+ * @param port port number, most printer have default port of 9100
  * @param options printer options, see https://www.npmjs.com/package/escpos for detail, or just print out "printer.escposPrinter" too see what options are available
  * @returns
  */
 export const CreateNetworkPrinter = (ip, port = 9100, options = {}) => {
     return new Printer(new NetworkAdapter(ip, port), options);
 };
+/**
+ * @param pid port id, for example '/dev/usb/lp0'
+ * @param options printer options, see https://www.npmjs.com/package/escpos for detail, or just print out "printer.escposPrinter" too see what options are available
+ * @returns
+ */
 export const CreateSerialPrinter = (pid, options = {}) => {
     return new Printer(new SerialAdapter(pid), options);
 };

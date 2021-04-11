@@ -20,12 +20,17 @@ export declare const closeBrowser: () => Promise<void>;
 export declare const screenshotDomElement: (page: Page, selector: string, padding?: number) => Promise<Buffer>;
 /**
  *
- * @param ip
- * @param port default 9100
+ * @param ip the ip address to connect to the printer
+ * @param port port number, most printer have default port of 9100
  * @param options printer options, see https://www.npmjs.com/package/escpos for detail, or just print out "printer.escposPrinter" too see what options are available
  * @returns
  */
 export declare const CreateNetworkPrinter: (ip: string, port?: number, options?: {}) => Printer;
+/**
+ * @param pid port id, for example '/dev/usb/lp0'
+ * @param options printer options, see https://www.npmjs.com/package/escpos for detail, or just print out "printer.escposPrinter" too see what options are available
+ * @returns
+ */
 export declare const CreateSerialPrinter: (pid: string, options?: {}) => Printer;
 export declare const CreateUSBPrinter: (vid: number, pid: number, options?: {}) => Printer;
 declare const htmltoescpos: {

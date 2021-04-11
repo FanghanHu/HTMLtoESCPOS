@@ -21,6 +21,10 @@ export declare type PrintImageOptions = {
      * Printer Buzzer (Beep sound).
      */
     beep?: Beep;
+    /**
+     * format of the image, png by default
+     */
+    imageFormat?: "png" | "jpeg" | "gif";
 };
 export declare type Beep = {
     /**
@@ -60,7 +64,7 @@ export default class Printer {
     /**
      * print the given image, image should be a buffer or an url
      */
-    printImage(image: Buffer | string, { topFeed, bottomFeed, cut, beep, cashdraw }?: PrintImageOptions): void;
+    printImage(image: Buffer | string, { topFeed, bottomFeed, cut, beep, cashdraw, imageFormat }?: PrintImageOptions): void;
     /**
      * send a beep sequence to the buzzer
      */
